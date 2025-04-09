@@ -69,7 +69,7 @@ Para configurar o projeto, siga os passos abaixo:
 
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/seu-usuario/validadorsenhas.git
+   git clone https://github.com/alfredosantos/validador-senhas.git
    ```
 2. Navegue até o diretório do projeto:
    ```sh
