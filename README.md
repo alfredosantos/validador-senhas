@@ -22,12 +22,16 @@ Este projeto é uma aplicação Spring Boot que valida senhas com base em divers
 
 ## Estrutura do Projeto
 
+```plaintext
 src/
 ├── main/
 │   ├── java/
 │   │   └── br/com/alfredo/validadorsenhas/
 │   │       ├── ValidadorsenhasApplication.java
-│   │       ├── ValidadorsenhasService.java
+│   │       ├── controller/
+│   │       │   └── ValidadorSenhasController.java
+│   │       ├── service/
+│   │       │   └── ValidadorsenhasService.java
 │   │       ├── validator/
 │   │       │   ├── PasswordValidator.java
 │   │       │   └── rules/
@@ -41,12 +45,16 @@ src/
 │   │       └── config/
 │   │           └── AppConfig.java
 │   └── resources/
-│       └── application.properties
+│       ├── application.properties
+│       └── static/
 └── test/
     └── java/
         └── br/com/alfredo/validadorsenhas/
-            ├── ValidadorsenhasServiceTest.java
             ├── ValidadorsenhasApplicationTests.java
+            ├── controller/
+            │   └── ValidadorSenhasControllerTest.java
+            ├── service/
+            │   └── ValidadorsenhasServiceTest.java
             └── rules/
                 ├── LengthRuleTest.java
                 ├── DigitRuleTest.java
